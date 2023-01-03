@@ -1,0 +1,87 @@
+@import "utils/variables";
+
+body {
+  background-color: $bg_color;
+  color: $font_color;
+}
+
+a {
+  color: $link-color;
+
+  &.button {
+    text-decoration: none;
+    border: $border;
+    padding: 0.5em;
+    border-radius: $border-radius;
+  }
+}
+
+.toggle-group {
+  display: flex;
+  justify-content: center;
+
+  .button {
+    &.timeline-toggle {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &.resume-toggle {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    &.selected {
+      color: $bg_color;
+      background-color: $font_color;
+    }
+  }
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+
+  > * {
+    width: 33%;
+    display: flex;
+  }
+
+  .header-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+
+    li {
+      padding: 0.25em 0.5em;
+    }
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: $bg_color;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: $link-color;
+}
+
+@media screen and (max-width: 400px) {
+  header.site-header {
+    font-size: 0.85em;
+  }
+}

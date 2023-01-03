@@ -1,0 +1,367 @@
+@import "./../utils/variables";
+
+.timeline-description {
+	max-width: 600px;
+	margin: auto;
+	padding: 1em 1em 0.5em;
+}
+
+.key-cont {
+	max-width: 90%;
+	min-width: 50%;
+	margin: auto;
+
+	button {
+		padding: 0.5em;
+		margin: 0.5em;
+		border: $border;
+		font-size: 1em;
+		border-radius: $border-radius;
+		width: 5em;
+		cursor: pointer;
+		min-width: 5em;
+
+		&.music-button {
+			background-color: $music-color;
+			width: 5.5em;
+			background-size: 1.55em;
+			background-image: url("./images/music_icon_black.png");
+			background-repeat: no-repeat;
+			background-position-y: 50%;
+			background-position-x: 4px;
+			padding-left: 1.5em;
+		}
+		&.social-button {
+			background-color: $social-color;
+			width: 5.5em;
+			background-size: 1.55em;
+			background-image: url("./images/social_icon_black.png");
+			background-repeat: no-repeat;
+			background-position-y: 50%;
+			background-position-x: 4px;
+			padding-left: 1.5em;
+		}
+		&.coding-button {
+			background-color: $coding-color;
+			color: $font-color;
+			width: 5.5em;
+			background-size: 1.55em;
+			background-image: url("./images/code_icon.png");
+			background-repeat: no-repeat;
+			background-position-y: 50%;
+			padding-left: 1.5em;
+		}
+		&.all-button {
+			background-color: $text-color;
+			color: $bg-color;
+		}
+		
+	}
+}
+
+.selectable {
+	transition: border-width .25s ease-in-out, margin .25s ease-in-out;
+	
+	&.selected {
+		border: 0.25em solid rgba(0,0,0,0.2);
+		margin: 0.25em;
+	}
+}
+
+.info-modal-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+	text-align: center;
+	background: rgba(0,0,0,0.5);
+	z-index: 5;
+
+	.info-modal {
+		margin: 10% auto;
+		background-color: $bg_color_info_modal;
+		width: 50%;
+		border-radius: $border-radius;
+		padding: 0.5em;
+		position: relative;
+		z-index: 1;
+		opacity: 0;
+		transition: opacity 0.25s ease-in;
+		text-align: left;
+		line-height: 1.25em;
+		max-height: 90%;
+		overflow: scroll;
+
+		&.fade-in {
+			opacity: 1;
+		}
+
+		h3 {
+			padding: 0.5em 1.75em;
+			position: relative;
+			text-align: center;
+
+			button {
+				position: absolute;
+				right: 0;
+				top: 0;
+				background: transparent;
+				border: $border;
+				color: $font_color;
+				border-radius: $border-radius;
+				padding: 0.5em 0.75em;
+				cursor: pointer;
+			}
+		}
+
+		div {
+			text-align: left;
+		}
+
+		ul li {
+			margin: 0.5em 0 0.5em;
+		}
+
+		label {
+			font-weight: bold;
+		}
+
+		.img-container {
+			text-align: center;
+
+			img {
+				width: 60%;
+				margin: auto;
+			}
+		}
+
+		audio {
+			width: 100%;
+			border-radius: 0.25em;
+		}
+
+		.iframe-container {
+			background: #fff;
+			padding: 0 0.5em;
+			border-radius: $border-radius;
+
+			iframe {
+				margin: 1em 0 0.5em;
+			}
+		}
+	}
+
+	.info-modal-backdrop {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1000;
+		text-align: center;
+		background: rgba(0,0,0,0.5);
+		z-index: 0;
+		cursor: pointer;
+	}
+}
+
+.timeline-cont {
+	display: grid;
+	grid-template-rows: repeat(22, 4.545%);
+	grid-template-columns: 6% repeat(auto-fit, 18%);
+	grid-gap: 0.25em;
+	padding: 0.5em;
+	height: 100em;
+	width: calc(100% - 3em);
+	width: 100%;
+	justify-content: center; 
+	transition: opacity 0.5s ease-in;
+	opacity: 1;
+
+	&.music  {
+		grid-template-columns: 5% repeat(auto-fit, 30%);
+	}
+	&.social {
+		grid-template-columns: 5% repeat(auto-fit, 23%);
+	}
+	&.coding {
+		grid-template-columns: 5% repeat(auto-fit, 45%);
+	}
+
+	.label {
+		&.left {
+			grid-column-start: 1;
+			grid-column-end: 2;
+		}
+		&.right {
+			grid-column-start: 9;
+			grid-column-end: 9;
+		}
+		
+		&.label-2021 {
+			grid-row-start: 1;
+			grid-row-end: 2;
+		}
+		&.label-2020 {
+			grid-row-start: 2;
+			grid-row-end: 7;
+		}
+		&.label-2015 {
+			grid-row-start: 7;
+			grid-row-end: 12;
+		}
+		&.label-2010 {
+			grid-row-start: 12;
+			grid-row-end: 17;
+		}
+		&.label-2005 {
+			grid-row-start: 17;
+			grid-row-end: 21;
+		}
+		&.label-2000 {
+			grid-row-start: 21;
+			grid-row-end: 22;
+		}
+	}
+
+	&.fade-out .grid-item {
+		opacity: 0;
+	}
+	&.fade-in .grid-item {
+		opacity: 1;
+	}
+
+	.grid-item {
+		border-radius: $border-radius;
+		padding: 0.25em;
+		margin: 0.125em;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		opacity: 1;
+		cursor: pointer;
+		transition: opacity 0.25s ease-in;
+
+		div.col-label {
+			text-align: center;
+			border: $border;
+			border-radius: 0.25em 0.25em 0 0;
+			padding: 0.1em;
+		}
+
+		div.col-container {
+			display: flex;
+			justify-content: center;
+			height: 100%;
+			overflow: hidden;
+			border-radius: 0 0 0.25em 0.25em;
+		}
+
+		.col {
+			height: 100%;
+			background-size: 0.75em;
+			position: relative;
+
+			.pattern {
+				background-repeat: repeat;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				opacity: 0.5;
+				z-index: 2;
+			}
+		}
+
+		.music-col {
+			background-color: $music-color;
+
+			.pattern {
+				background-size: 1.55em;
+				background-image: url("./images/music_icon.png");
+			}
+		}
+
+		.social-col {
+			background-color: $social-color;
+
+			.pattern {
+				background-size: 1.55em;
+				background-image: url("./images/social_icon.png");
+			}
+		}
+
+		.coding-col {
+			background-color: $coding-color;
+
+			.pattern {
+				background-size: 1.55em;
+				background-image: url("./images/code_icon.png");
+				opacity: 0.3;
+			}
+		}
+	}
+}
+
+
+
+// GRID COLUMNS
+$columns: 6;
+@for $i from 1 through $columns {
+    .grid-column-start-#{$i} {
+        grid-column-start: $i;
+    }
+    .grid-column-end-#{$i} {
+        grid-column-start: $i;
+    }
+}
+
+
+// GRID ROWS
+$rows: 22;
+@for $ii from 1 through $rows {
+    .grid-row-start-#{$ii} {
+        grid-row-start: $ii;
+    }
+    .grid-row-end-#{$ii} {
+        grid-row-end: $ii;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+	.timeline-cont {
+		height: 120em;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	header.timelime-intro {
+		font-size: 0.8em;
+	}
+
+	.info-modal-container .info-modal {
+		width: 70%;
+		
+		.img-container img {
+			width: 100%;
+		}
+	}
+
+	.timeline-cont {
+		height: 160em;
+		font-size: 0.75em;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.info-modal-container .info-modal {
+		width: 90%;
+	}
+	.timeline-cont {
+		font-size: 0.5em;
+	}
+}

@@ -1,0 +1,103 @@
+@import "./../utils/variables";
+
+.resume-container {
+	max-width: 1024px;
+	margin: auto;
+	padding: 1em;
+
+	.disabled {
+		opacity: 0.3;
+		pointer-events: none;
+	}
+
+	.top-nav {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		flex-wrap: wrap;
+		align-items: center;
+
+		.nav-link {
+			cursor: pointer;
+		}
+
+		li {
+			margin: 0.25em;
+		}
+
+		input {
+			border-radius: $border-radius;
+			border: $border;
+			padding: 0.5em;
+		}
+	} 
+
+	article.resume-section {
+		padding: 1em 0;
+		margin: 1em 0;
+		display: flex;
+		line-height: 1.25em;
+
+		.summary,
+		ul.skills-list li {
+			margin: 0.5em 0.5em 0.5em 1em;
+		}
+
+		.to-top {
+			transform: rotate(90deg);
+			background: transparent;
+			color: $link-color;
+			border: none;
+			font-size: 1.1em;
+			cursor: pointer;
+		}
+
+		header {
+			display: flex !important;
+			justify-content: space-between;
+		}
+
+		.education-container {
+			width: 100%;
+		}
+
+		.education-container section,
+		.jobs-container section {
+			padding: 1em;
+			border: $border;
+			border-radius: $border-radius;
+			margin: 1em;
+
+			.date {
+				min-width: 9em;
+				text-align: right;
+			}
+
+			.highlight {
+				margin: 0.5em 1em;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.resume-container {
+
+		.top-nav {
+			justify-content: space-evenly;
+		}
+
+		article.resume-section {
+			.date {
+				max-width: 9em;
+			}
+
+			.education-container section,
+			.jobs-container section {
+				.highlight {
+					margin: 0.5em;
+				}
+			}
+		}
+	}
+}
