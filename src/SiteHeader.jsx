@@ -17,7 +17,7 @@ class SiteHeader extends Component {
 		            <li><a title="Click to download Resume." href="Resume_Matthew_Schultz.pdf">Resume (PDF)</a></li>
 		            <li><a title="My LinkedIn Page" href="https://www.linkedin.com/in/matthewkschultz" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
 		            <li><a title="Send me an email!" href="mailto:matt@matthewkschultz.com">Email</a></li>
-		            <li><a title="View the code for this site." target="_blank" href="https://gitlab.com/matt.schultz/professional-public" rel="noopener noreferrer">View Code</a></li>
+		            <li><a title="View the code for this site." target="_blank" href="https://github.com/Rozgony/professional" rel="noopener noreferrer">View Code</a></li>
 	            </ul>
 	        </header>
 		);
