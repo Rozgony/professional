@@ -3,12 +3,12 @@ import { COMPANY, ROLES, PRESENT } from './../utils/CONSTANTS';
 const resume = {
   "basics":{
       "name": "Matthew Schultz",
-      "label": "Mobile / Web Engineer - Facilitator - Musician",
+      "label": "Software Engineer - Facilitator - Musician",
       "picture": "",
       "email": "matt@matthewkschultz.com",
       "phone": "410-375-8667",
       "website": "http://www.matthewkschultz.com",
-      "summary": ["I create tools and lead teams to improve the way we generate and consume new information and communicate with each other by integrating my abilities as a web/mobile engineer with my experience in social sciences, partnership building, consensus building, facilitation, and team management."],
+      "summary": ["I have a passion for creativity, problem-solving, and service that has motivated me throughout my career as a software engineer as well as with my prior experience in team management, partnership building, consensus building, facilitation, education, and applied social sciences."],
       "location": {
         "address": "",
         "postalCode": "",
@@ -31,21 +31,24 @@ const resume = {
           }]
       },
   "work": [{
-      "company": "Synaptic AP",
-      "position": "Web/Mobile Engineer",
-      "website": "https://synapticap.com",
+      "company": COMPANY.YOUREKA,
+      "position": "Principal Application Engineer",
+      "website": "https://youreka.io",
       "startDate": "2016-02-15",
       "endDate": PRESENT,
-      "summary": "Working on a distributed team to develop the Youreka (web browser/iOS/Android) internationally-utilized, enterprise-level Field Service Management app for use with onsite inspections, maintenance, compliance, and auditing while offline. More than Youreka 30,000 forms are created per day by users to perform activities such as COVID-19 Contact Tracking in the United Kingdom, industrial inspections, or retail inspection.",
+      "summary": "Working on a distributed team to develop the internationally-utilized Youreka (web browser/iOS/Android) enterprise-level app. More than 30,000 Youreka forms are created per day by users to perform activities such as public health data tracking in the United Kingdom, industrial inspections, and retail inspection. I began as an Application Engineer and was promoted to a Principal position in January 2022.",
       "highlights": [{
         "title": ROLES.TECH,
-        "des": "Javascript, AngularJS, ReactJS, VueJS, Apache Cordova, Ionic, SOQL/SQL, Salesforce, Salesforce Mobile SDK, Jasmine, Android Studio, Xcode, HTML and CSS."
+        "des": "ReactJS, Ionic Capacitor, AngularJS, JQuery, Apache Cordova, SOQL/SQL, Salesforce, Salesforce Mobile SDK, Jasmine, Android Studio, Xcode, Javascript, HTML and CSS."
       },{
-        "title": ROLES.PROD_DESIGN,
-        "des": "Design new features based on customer feedback, user testing, adoption metrics, and market trends as part of a team including data analysts, graphic designers, sales people, marketing staff, and other developers."
+        "title": ROLES.ARCHITECT,
+        "des": "Design, engineer, and write technical requirements for new features based on customer feedback, user testing, adoption metrics, and market trends as part of a team including data analysts, graphic designers, sales people, marketing staff, and other engineers."
       },{
-        "title": ROLES.SYNA_CARES,
-        "des": "Chair of the philanthropy committee implementing our own version of the Salesforce model of 1% Profit, 1% Time, and 1% Resources donated to philanthropic efforts."
+        "title": ROLES.SUPERVISOR,
+        "des": "Supervise and mentor junior engineers on coding, design, architecture, testing, and documentation base practices."
+      },{
+        "title": ROLES.CLIENT_SUPPORT,
+        "des": "Educate clients on app functionality and assist with their implementation issues."
       }]
     },{
         "company": COMPANY.SOCIETYLAB,

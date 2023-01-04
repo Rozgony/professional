@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TOPICS } from './../../utils/CONSTANTS';
+import { CURRENT_YEAR, TOPICS } from './../../utils/CONSTANTS';
 import { gridItemClasses } from './../../utils/utils';
 import './../timeline.scss';
 
@@ -13,7 +13,7 @@ class TimelineGrid extends Component {
 		return (
 				<div className={`timeline-cont ${contClasses}`}>
 					{
-						['2021','2020','2015','2010','2005','2000'].map( year => {
+						[`${CURRENT_YEAR}`,'2020','2015','2010','2005','2000'].map( year => {
 							return <label key={year} className={`label label-${year} left`}>{year}</label>;
 						})
 					}

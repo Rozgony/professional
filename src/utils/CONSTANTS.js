@@ -13,8 +13,7 @@ const TOPICS = {
 };
 
 const COMPANY = {
-    SYNAPTIC: "Synaptic AP",
-    PARCHMENT: "Parchment",
+    YOUREKA: "Youreka Labs, Inc.",
     SOCIETYLAB: "SocietyLab",
     FEDERAL_GOVT: "Centers for Medicare & Medicaid Services, US Government",
     IRC: "International Rescue Committee",
@@ -24,7 +23,9 @@ const COMPANY = {
 
 const ROLES = {
     TECH: "Primary Technologies",
-    SYNA_CARES: "Synaptic Cares",
+    ARCHITECT: "Architect",
+    SUPERVISOR: "Supervisor",
+    CLIENT_SUPPORT: "Client Support",
     FACILITATOR: "Facilitator",
     PROD_DESIGN: "Product Design",
     DATA: "Data Analysis",
@@ -39,11 +40,20 @@ const PRESENT = "Present";
 
 const SCROLL_DUR = 333;
 
+const CURRENT_YEAR = 2023; // UPDATE YEAR
+
+const START_YEAR = 2000;
+
+const TIMELINE_ROW_LENGTH = CURRENT_YEAR - START_YEAR + 1;
+
 export {
 	SECTIONS,
 	TOPICS,
 	COMPANY,
 	ROLES,
 	PRESENT,
-	SCROLL_DUR
+	SCROLL_DUR,
+    CURRENT_YEAR,
+    START_YEAR,
+    TIMELINE_ROW_LENGTH
 };

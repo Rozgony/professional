@@ -354,7 +354,7 @@ const timeline = {
 		},
 		{
 			label: "Jazz Piano & Synthesizers",
-			start: 2021,
+			start: 2023,
 			end: PRESENT,
 			description: "Solo jazz piano and/or jazz synthesizers for clubs, parties, events, and more.",
 			topics: {
@@ -365,18 +365,42 @@ const timeline = {
 			}
 		},
 		{
-			label: COMPANY.SYNAPTIC,
-			start: parseYearFromDateStr(work[COMPANY.SYNAPTIC].startDate),
-			end: parseYearFromDateStr(work[COMPANY.SYNAPTIC].endDate),
-			description: work[COMPANY.SYNAPTIC].summary,
+			label: "Dawn of Everything Community Site",
+			start: 2021,
+			end: 2022,
+			description: "Community website for the New York Times best-selling book, The Dawn of Everything. The book presents a dramatically new understanding of human history, challenging our most fundamental assumptions about social evolution--from the development of agriculture and cities to the origins of the state, democracy, and inequality--and revealing new possibilities for human emancipation.",
+			topics: {
+				[TOPICS.SOCIAL]: {
+					amount: 100,
+					desc: "Curate site content and facilitate Reading Workgroups, projects, assemblies, and other activities to encourage readers to explore the facts, ideas, and questions presented in the book."
+				}
+			}
+		},
+		{
+			label: "The Unlearning Family",
+			start: 2023,
+			end: PRESENT,
+			description: "Like many parents and educators, I’ve spent most of my adulthood unlearning what I was taught about history, society, and people. It is a continual process of unlearning as I meet new people, new information, and new experiences. Now that I am a parent of young children, I not only want to pass that unlearning, curiosity, empathy, and resilience on to my own children, but also help other parents and educators do the same.",
+			topics: {
+				[TOPICS.SOCIAL]: {
+					amount: 75,
+					desc: "Peace Educator & Parent creating fun parent/educator resources to explain to our kids all that's going on in the world, how we got here & whats next."
+				},
+				[TOPICS.CODING]: {
+					amount: 25,
+					desc: "Create Social STEAM activities teaching Science, Technology, Engineering, Arts, and Mathematics topics in a way that is properly contextualized within their social applications, implications, and contexts. "
+				}
+			}
+		},
+		{
+			label: COMPANY.YOUREKA,
+			start: parseYearFromDateStr(work[COMPANY.YOUREKA].startDate),
+			end: parseYearFromDateStr(work[COMPANY.YOUREKA].endDate),
+			description: work[COMPANY.YOUREKA].summary,
 			topics: {
 				[TOPICS.CODING]: {
-					amount: 95,
-					desc: work[COMPANY.SYNAPTIC].roles[ROLES.TECH].des
-				},
-				[TOPICS.SOCIAL]: {
-					amount: 5,
-					desc: work[COMPANY.SYNAPTIC].roles[ROLES.SYNA_CARES].des
+					amount: 100,
+					desc: work[COMPANY.YOUREKA].roles[ROLES.TECH].des
 				}
 			}
 		}

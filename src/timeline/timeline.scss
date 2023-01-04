@@ -169,7 +169,7 @@
 
 .timeline-cont {
 	display: grid;
-	grid-template-rows: repeat(22, 4.545%);
+	grid-template-rows: repeat($timeline-rows-length, calc(100 / #{$timeline-rows-length}));
 	grid-template-columns: 6% repeat(auto-fit, 18%);
 	grid-gap: 0.25em;
 	padding: 0.5em;
@@ -200,29 +200,29 @@
 			grid-column-end: 9;
 		}
 		
-		&.label-2021 {
+		&.label-2023 { // UPDATE YEAR
 			grid-row-start: 1;
-			grid-row-end: 2;
+			grid-row-end: calc(#{$timeline-rows-length} - 20);
 		}
 		&.label-2020 {
-			grid-row-start: 2;
-			grid-row-end: 7;
+			grid-row-start: calc(#{$timeline-rows-length} - 20);
+			grid-row-end: calc(#{$timeline-rows-length} - 15);
 		}
 		&.label-2015 {
-			grid-row-start: 7;
-			grid-row-end: 12;
+			grid-row-start: calc(#{$timeline-rows-length} - 15);
+			grid-row-end: calc(#{$timeline-rows-length} - 10);
 		}
 		&.label-2010 {
-			grid-row-start: 12;
-			grid-row-end: 17;
+			grid-row-start: calc(#{$timeline-rows-length} - 10);
+			grid-row-end: calc(#{$timeline-rows-length} - 5);
 		}
 		&.label-2005 {
-			grid-row-start: 17;
-			grid-row-end: 21;
+			grid-row-start: calc(#{$timeline-rows-length} - 5);
+			grid-row-end: calc(#{$timeline-rows-length} - 1);
 		}
 		&.label-2000 {
-			grid-row-start: 21;
-			grid-row-end: 22;
+			grid-row-start: calc(#{$timeline-rows-length} - 1);
+			grid-row-end: $timeline-rows-length;
 		}
 	}
 
@@ -321,7 +321,7 @@ $columns: 6;
 
 
 // GRID ROWS
-$rows: 22;
+$rows: $timeline-rows-length;
 @for $ii from 1 through $rows {
     .grid-row-start-#{$ii} {
         grid-row-start: $ii;

@@ -1,3 +1,5 @@
+import { PRESENT, CURRENT_YEAR, START_YEAR, TIMELINE_ROW_LENGTH } from "./CONSTANTS";
+
 function filterResume(items, filter){
 	return items.filter( item => filterObject(item,filter.toLowerCase()));
 }
@@ -34,9 +36,8 @@ function parseYearFromDateStr(dateStr = '') {
 }
 
 function gridItemClasses(item){
-	const startYear = 2000;
-	const endYear = 22;
-	return `grid-row-start-${endYear - (item.start - startYear)} grid-row-end-${endYear - (item.end - startYear)} grid-column-end-01 grid-column-end-06 grid-item ${item.fadeClass || ''}`;
+	const end = item.end === PRESENT ? CURRENT_YEAR : item.end;
+	return `grid-row-start-${TIMELINE_ROW_LENGTH - (item.start - START_YEAR)} grid-row-end-${TIMELINE_ROW_LENGTH - (end - START_YEAR)} grid-column-end-01 grid-column-end-06 grid-item ${item.fadeClass || ''}`;
 }
 
 export {

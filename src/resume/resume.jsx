@@ -24,7 +24,7 @@ class Resume extends Component {
 
 	render() {
 
-		const { basics, skills, work, education} = resume;
+		const { basics, skills, work, education } = resume;
 		const { filter } = this.state;
 
 		const filtered = {};
