@@ -28,6 +28,7 @@ const ROLES = {
     CLIENT_SUPPORT: "Client Support",
     FACILITATOR: "Facilitator",
     PROD_DESIGN: "Product Design",
+    PROJECT_MANAGEMENT: "Project Management",
     DATA: "Data Analysis",
     DEV_SCALE: "Program Development and Scaling",
     COMM_DIALOG: "Community Dialogues",

@@ -8,7 +8,7 @@ const resume = {
       "email": "matt@matthewkschultz.com",
       "phone": "410-375-8667",
       "website": "http://www.matthewkschultz.com",
-      "summary": ["I have a passion for creativity, problem-solving, and service that has motivated me throughout my career as a software engineer as well as with my prior experience in team management, partnership building, consensus building, facilitation, education, and applied social sciences."],
+      "summary": ["I have a passion for creativity, problem-solving, and service that has motivated me throughout my career as an application engineer as well as with my prior experience in team management, partnership building, consensus building, facilitation, education, and applied social sciences."],
       "location": {
         "address": "",
         "postalCode": "",
@@ -36,13 +36,16 @@ const resume = {
       "website": "https://youreka.io",
       "startDate": "2016-02-15",
       "endDate": PRESENT,
-      "summary": "Working on a distributed team to develop the internationally-utilized Youreka (web browser/iOS/Android) enterprise-level app. More than 30,000 Youreka forms are created per day by users to perform activities such as public health data tracking in the United Kingdom, industrial inspections, and retail inspection. I began as an Application Engineer and was promoted to a Principal position in January 2022.",
+      "summary": "A founding engineer on an enterprise-level smart forms application that scaled into its own company that was later purchased. More than 30,000 Youreka forms are created daily for onsite inspections, maintenance, compliance, and auditing. I am currently overseeing a team of 6 engineers balancing the refactor of both the mobile and web apps from older technologies while also adding new features requested by customers.",
       "highlights": [{
         "title": ROLES.TECH,
-        "des": "ReactJS, Ionic Capacitor, AngularJS, JQuery, Apache Cordova, SOQL/SQL, Salesforce, Salesforce Mobile SDK, Jasmine, Android Studio, Xcode, Javascript, HTML and CSS."
+        "des": "Javascript, React, Zustand, Ionic Capacitor, SOQL/SQL, Salesforce, Jest, Android Studio, Apache Cordova, Xcode, HTML and CSS"
       },{
         "title": ROLES.ARCHITECT,
         "des": "Design, engineer, and write technical requirements for new features based on customer feedback, user testing, adoption metrics, and market trends as part of a team including data analysts, graphic designers, sales people, marketing staff, and other engineers."
+      },{
+        "title": ROLES.PROJECT_MANAGEMENT,
+        "des": "Run stand-ups, sprints, and ensure team meets release deadlines."
       },{
         "title": ROLES.SUPERVISOR,
         "des": "Supervise and mentor junior engineers on coding, design, architecture, testing, and documentation base practices."
@@ -63,6 +66,9 @@ const resume = {
           },{
             "title": ROLES.PROD_DESIGN,
             "des": "Integrate the review of academic literature, industry advocates, user feedback, and personal experience into an iterative process to design an interface for users to create and share collections of information."
+          },{
+            "title": ROLES.ARCHITECT,
+            "des": "Created full stack web application with users, login, database, and a dynamic UI for adding, collecting, and exploring collections of links using data visualization."
           }]
     },{
       "company": COMPANY.FEDERAL_GOVT,
@@ -178,8 +184,7 @@ const resume = {
         "HTML,",
         "CCS,",
         "Apex,",
-        "SOQL/SQL,",
-        "R",
+        "SQL,",
         "Java (basic),",
         "Objective-C (basic)"
       ]
@@ -188,22 +193,20 @@ const resume = {
       "level": "",
       "keywords": [
         "ReactJS,",
+        "Ionic Capacitor,",
         "AngularJS,",
-        "VueJS,",
         "D3JS,",
         "NodeJS,",
-        "ExpressJS,",
+        "FabricJS,",
+        "LeafletJS,",
         "MongoDB,",
         "MongooseJS,",
+        "Express,",
         "SASS/SCSS,",
-        "Bootstrap,",
         "Gulp,",
-        "Jasmine,",
+        "Jest,",
         "JQuery,",
-        "Salesforce Mobile SDK,",
         "Apex,",
-        "Ionic,",
-        "Capacitor,",
         "Apache Cordova"
       ]
     },{
