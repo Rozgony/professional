@@ -26,7 +26,7 @@ const ROLES = {
     ARCHITECT: "Architect",
     SUPERVISOR: "Supervisor",
     CLIENT_SUPPORT: "Client Support",
-    FACILITATOR: "Facilitator",
+    FACILITATOR: "Experiential Learning & Dialogue Facilitator",
     PROD_DESIGN: "Product Design",
     PROJECT_MANAGEMENT: "Project Management",
     DATA: "Data Analysis",
@@ -37,11 +37,20 @@ const ROLES = {
     WEBMASTER: "Webmaster"
 };
 
+const FACILITATION_PRODUCTS = {
+    COLLAB_SKILLS: "Team Collaboration Skills",
+    SOCIAL_SERVICE_SKILLS: "Social Services Skill Building",
+    FORUM_THEATRE: "Forum Theatre:  Anti-Bullying, Anti-Harassment, and More",
+    TEAM_RETREATS: "Team Retreats: Appreciation, Purpose, and Action",
+    SAE: "Addressing Subtle Acts of Exclusion",
+    INCLUSIVE_ORGS: "Inclusive Innovative Organizations"
+};
+
 const PRESENT = "Present";
 
 const SCROLL_DUR = 333;
 
-const CURRENT_YEAR = 2023; // UPDATE YEAR
+const CURRENT_YEAR = 2024; // UPDATE YEAR
 
 const START_YEAR = 2000;
 
@@ -56,5 +65,6 @@ export {
 	SCROLL_DUR,
     CURRENT_YEAR,
     START_YEAR,
-    TIMELINE_ROW_LENGTH
+    TIMELINE_ROW_LENGTH,
+    FACILITATION_PRODUCTS
 };

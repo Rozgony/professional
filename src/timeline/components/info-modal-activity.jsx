@@ -6,8 +6,19 @@ class InfoModalActivity extends Component {
 		const { topic, title } = this.props;
 		
 		if (!topic || !title) return null;
-		
-		return <li><b>{ toCapitalCase(title) } ({topic.amount}%):</b> { topic.desc }</li>;
+		console.log(topic.desc);
+		return <li><b>{ toCapitalCase(title) } ({topic.amount}%):</b> { 
+			typeof topic.desc === 'string' ? 
+				topic.desc : (
+					topic.desc.map(list => {
+						return <div className="modal-list" key={list.title}>
+							<b>{list.title}</b>
+							<br/>
+							{list.des}
+						</div>
+					})
+				)
+		}</li>;
 	}
 }
 

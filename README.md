@@ -5,12 +5,8 @@ This is an example of some recent code I have written (July 2020). The site is h
 Please note that due to their size, the audio files have not been included in this repository.
 
 ## To Do List
-* Use AWS CloudFront to allow for https.
 * Allow music players to sit fixed at the bottom of the screen so they can be listened to while browsing other parts of the site.
 * Spanish Language version.
-* Make Facilitation Chart be Interactive with more information about the styles of facilitation.
-* Record and upload a couple Jazz Piano tracks.
-* Make it so I do not have to manually increment current year in the timeline
 
 ## Available Scripts
 ### `npm start`

@@ -56,7 +56,11 @@ a {
 
 
     li {
-      padding: 0.25em 0.5em;
+      text-align: right;
+      a {
+        padding: 0.5em;
+        line-height: 1.5em;
+      }
     }
   }
 }

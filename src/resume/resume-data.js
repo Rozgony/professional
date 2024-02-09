@@ -1,14 +1,14 @@
-import { COMPANY, ROLES, PRESENT } from './../utils/CONSTANTS';
+import { COMPANY, ROLES, PRESENT, FACILITATION_PRODUCTS } from './../utils/CONSTANTS';
 
 const resume = {
   "basics":{
       "name": "Matthew Schultz",
-      "label": "Software Engineer - Facilitator - Musician",
+      "label": "Principal Application Engineer - Facilitator - Musician",
       "picture": "",
       "email": "matt@matthewkschultz.com",
       "phone": "410-375-8667",
       "website": "http://www.matthewkschultz.com",
-      "summary": ["I have a passion for creativity, problem-solving, and service that has motivated me throughout my career as an application engineer as well as with my prior experience in team management, partnership building, consensus building, facilitation, education, and applied social sciences."],
+      "summary": ["I have a passion for creativity, problem-solving, and service that has motivated me throughout my career as a Team Lead and Principle Application Engineer as well as with my prior experience in team management, partnership building, consensus building, facilitation, education, and applied social sciences."],
       "location": {
         "address": "",
         "postalCode": "",
@@ -32,26 +32,52 @@ const resume = {
       },
   "work": [{
       "company": COMPANY.YOUREKA,
-      "position": "Principal Application Engineer",
+      "position": "Team Lead / Principal Application Engineer",
       "website": "https://youreka.io",
       "startDate": "2016-02-15",
       "endDate": PRESENT,
       "summary": "A founding engineer on an enterprise-level smart forms application that scaled into its own company that was later purchased. More than 30,000 Youreka forms are created daily for onsite inspections, maintenance, compliance, and auditing. I am currently overseeing a team of 6 engineers balancing the refactor of both the mobile and web apps from older technologies while also adding new features requested by customers.",
       "highlights": [{
         "title": ROLES.TECH,
-        "des": "Javascript, React, Zustand, Ionic Capacitor, SOQL/SQL, Salesforce, Jest, Android Studio, Apache Cordova, Xcode, HTML and CSS"
+        "des": "Javascript, React, Zustand, Ionic Capacitor, SQLite, Jest, Android Studio, Xcode, AngularJS, JQuery, HTML and CSS"
       },{
         "title": ROLES.ARCHITECT,
-        "des": "Design, engineer, and write technical requirements for new features based on customer feedback, user testing, adoption metrics, and market trends as part of a team including data analysts, graphic designers, sales people, marketing staff, and other engineers."
+        "des": "Lead team collaboration to design, engineer, and write technical requirements for new features in a way that integrates the joint knowledge, experience, and requirements of the team and clients. This includes customer feedback, user testing, adoption metrics, and market trends as part of a team including data analysts, graphic designers, sales people, marketing staff, and other engineers."
       },{
         "title": ROLES.PROJECT_MANAGEMENT,
-        "des": "Run stand-ups, sprints, and ensure team meets release deadlines."
+        "des": "Run stand-ups, sprints, and ensure team meets release deadlines. Manage iOS App Store and Android Play Store listings and mobile app releases."
       },{
         "title": ROLES.SUPERVISOR,
-        "des": "Supervise and mentor junior engineers on coding, design, architecture, testing, and documentation base practices."
+        "des": "Supervise and mentor engineers on coding, design, architecture, testing, and documentation base practices."
       },{
         "title": ROLES.CLIENT_SUPPORT,
         "des": "Educate clients on app functionality and assist with their implementation issues."
+      }]
+    },{
+      "company": COMPANY.FREELANCE,
+      "position": ROLES.FACILITATOR,
+      "website": "facilitator.html",
+      "startDate": "2009-11-05",
+      "endDate": PRESENT,
+      "summary": "I co-create impactful experiences with communities and teams of people to build skills, foster dialogue and collaboration, and shift perspectives of what is possible.",
+      "highlights": [{
+        "title": FACILITATION_PRODUCTS.COLLAB_SKILLS,
+        "des": "This interactive training creates opportunities for participants to collaborate in new ways, look at problems from different perspectives, and build a more integrative collaborative practice as a team."
+      },{
+        "title": FACILITATION_PRODUCTS.TEAM_RETREATS,
+        "des": "The perfect activity for team retreats that helps the team build a shared vision of purpose, mutual appreciation, and an understanding of the required action to accomplish the collective goals."
+      },{
+        "title": FACILITATION_PRODUCTS.SOCIAL_SERVICE_SKILLS,
+        "des": "An interactive laboratory for applying best practices and participants' various experiences to difficult social service client interactions."
+      },{
+        "title": FACILITATION_PRODUCTS.FORUM_THEATRE,
+        "des": "This session provides a chance for participants to collaboratively experiment with better responses to challenging situations while building the confidence needed to better navigate such situations."
+      },{
+        "title": FACILITATION_PRODUCTS.SAE,
+        "des": "We've all said something we've regretted as soon as it's left our lips. Things that may have been well-intended but landed much differently or even offensively on others' ears. This session provides an interactive way of addressing Subtle Acts of Exclusions (formerly microaggressions) in a just, compassionate, and dialogical manner."
+      },{
+        "title": FACILITATION_PRODUCTS.INCLUSIVE_ORGS,
+        "des": "What makes an organization inclusive to people from various backgrounds is also what makes it able to dynamically incorporate new ideas and innovations. This session explores what that means in practice."
       }]
     },{
         "company": COMPANY.SOCIETYLAB,
@@ -83,20 +109,6 @@ const resume = {
       },{
         "title": "Systems Development and Administration",
         "des": "Engineered and implemented a database interfaced to track information and create automated reports on session logistics, participants, action items, and feedback and evaluation forms for the Command Center and the CPI Governance Council."
-      }]
-    },{
-      "company": COMPANY.FREELANCE,
-      "position": ROLES.FACILITATOR,
-      "website": "facilitator.html",
-      "startDate": "2007-01-01",
-      "endDate": "2015-01-01",
-      "summary": "For a graph of my facilitation styles, please visit the Timeline and click on \"Freelance Facilitator\".",
-      "highlights": [{
-        "title": ROLES.COMM_DIALOG,
-        "des": "Organize and facilitate community dialogues to address common issues and collectively develop effective solutions. Example sessions include: Language Access Community Dialogue for the Washington DC Mayor’s office as part of the Kommon Denominator team, R-E-S-P-E-C-T session in Baltimore City on how to prevent and address cat-calling and other sexual harassment in the street, and Sustained Dialogues consisting of sets of 7 weekly sessions focusing on issues of race and class."
-      },{
-        "title": ROLES.TOP,
-        "des": "Interactive training for high school teachers, graduate students, and other groups on how to facilitate use Theatre of the Oppressed Techniques with youth and adults."
       }]
     },{
       "company": COMPANY.IRC,
@@ -183,31 +195,22 @@ const resume = {
         "Javascript,",
         "HTML,",
         "CCS,",
-        "Apex,",
         "SQL,",
-        "Java (basic),",
-        "Objective-C (basic)"
+        "Java"
       ]
     },{
       "name": "Frameworks/Libraries",
       "level": "",
       "keywords": [
-        "ReactJS,",
+        "React,",
         "Ionic Capacitor,",
-        "AngularJS,",
-        "D3JS,",
-        "NodeJS,",
-        "FabricJS,",
-        "LeafletJS,",
-        "MongoDB,",
-        "MongooseJS,",
-        "Express,",
-        "SASS/SCSS,",
-        "Gulp,",
         "Jest,",
-        "JQuery,",
-        "Apex,",
-        "Apache Cordova"
+        "D3JS,",
+        "LeafletJS,",
+        "SQLite,",
+        "SCSS,",
+        "AngularJS,",
+        "JQuery",
       ]
     },{
       "name": "Design",
@@ -224,21 +227,21 @@ const resume = {
       "keywords": [
         "Web Browser,",
         "NodeJS,",
-        "Salesforce,",
-        "Sharepoint"
+        "Salesforce"
       ]
     },{
       "name": "Social",
       "level": "",
       "keywords": [
-        "Team Leadership,",
+        "Team Leadership & Mentoring,",
+        "Experiential Learning Facilitation,",
         "Inter-Agency Conference Facilitation,",
-        "Community Engagement & Building,",
-        "Cultural Trainings,",
+        "Community Building & Engagement,",
         "Intergroup Dialogue,",
         "Conflict Resolution,",
         "Consensus Building,",
         "Theatre of the Oppressed,",
+        "Nonprofit Management,",
         "Youth Education"
       ]
     },{
@@ -248,8 +251,7 @@ const resume = {
         "Jazz Piano,",
         "Analog Synthesis,",
         "Music Composition,",
-        "Music Production,",
-        "Logic X Pro"
+        "Music Production"
       ]
     },{
       "name": "Languages (Human)",

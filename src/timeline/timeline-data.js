@@ -1,7 +1,6 @@
 import { resume } from "./../resume/resume-data";
 import { createTimelineWork, parseYearFromDateStr } from "./../utils/utils";
 import { TOPICS, ROLES, COMPANY, PRESENT } from './../utils/CONSTANTS';
-import facilitationGraph from "./images/facilitation_graph.png";
 import WhenAManYells from "./audio/when_a_man_yells_for_his_mother.mp3";
 import Infusion from "./audio/Infusion.mp3";
 import StormScape from "./audio/StormScape.mp3";
@@ -243,15 +242,14 @@ const timeline = {
 			description: "Researched the facilitation process that was done by NGOs in Oruro, Bolivia to integrate the indigenous justice system with the state justice system after the indigenous justice was recognized by the 2009 constitutional reforms."
 		},
 		{
-			label: "Freelance Facilitator",
+			label: "Experiential Learning & Dialogue Facilitator",
 			start: parseYearFromDateStr(work[COMPANY.FREELANCE].startDate),
-			end: parseYearFromDateStr(work[COMPANY.FREELANCE].endDate),
-			description: "Below is a chart of the various facilitation styles in which I am experienced.",
-			image: facilitationGraph,
+			end: PRESENT,
+			description: work[COMPANY.FREELANCE].summary,
 			topics: {
 				[TOPICS.SOCIAL]: {
 					amount: 100,
-					desc: `${work[COMPANY.FREELANCE].roles[ROLES.TOP].des} ${work[COMPANY.FREELANCE].roles[ROLES.COMM_DIALOG].des}`
+					desc: work[COMPANY.FREELANCE].highlights
 				}
 			}
 		},
@@ -273,12 +271,12 @@ const timeline = {
 		},
 		{
 			label: "Trio",
-			start: 2012,
+			start: 2010,
 			end: 2014,
 			topics: {
 				[TOPICS.MUSIC]: {
 					amount: 100,
-					desc: "An experimental jazz hip hop group. Finding a good lead vocalist is difficult sometimes..."
+					desc: "An experimental jazz hip-hop group."
 				}
 			},
 			description: ""
@@ -353,54 +351,18 @@ const timeline = {
 			}]
 		},
 		{
-			label: "Jazz Piano & Synthesizers",
-			start: 2023,
-			end: PRESENT,
-			description: "Solo jazz piano and/or jazz synthesizers for clubs, parties, events, and more.",
-			topics: {
-				[TOPICS.MUSIC]: {
-					amount: 100,
-					desc: "Jazz Piano and/or Synthesizer interpretations of both new and old classics from Miles Davis, John Coltrane, Duke Ellington, J. Cole, Kendrick Lamar, J Dilla, Joe Raposo (Sesame Street), Camilla Cabello, Radiohead, Christian Scott aTunde Adjuah, Bjork, Death Cab for Cutie, and many others."
-				}
-			}
-		},
-		{
-			label: "Dawn of Everything Community Site",
-			start: 2021,
-			end: 2022,
-			description: "Community website for the New York Times best-selling book, The Dawn of Everything. The book presents a dramatically new understanding of human history, challenging our most fundamental assumptions about social evolution--from the development of agriculture and cities to the origins of the state, democracy, and inequality--and revealing new possibilities for human emancipation.",
-			topics: {
-				[TOPICS.SOCIAL]: {
-					amount: 100,
-					desc: "Curate site content and facilitate Reading Workgroups, projects, assemblies, and other activities to encourage readers to explore the facts, ideas, and questions presented in the book."
-				}
-			}
-		},
-		{
-			label: "The Unlearning Family",
-			start: 2023,
-			end: PRESENT,
-			description: "Like many parents and educators, I’ve spent most of my adulthood unlearning what I was taught about history, society, and people. It is a continual process of unlearning as I meet new people, new information, and new experiences. Now that I am a parent of young children, I not only want to pass that unlearning, curiosity, empathy, and resilience on to my own children, but also help other parents and educators do the same.",
-			topics: {
-				[TOPICS.SOCIAL]: {
-					amount: 75,
-					desc: "Peace Educator & Parent creating fun parent/educator resources to explain to our kids all that's going on in the world, how we got here & whats next."
-				},
-				[TOPICS.CODING]: {
-					amount: 25,
-					desc: "Create Social STEAM activities teaching Science, Technology, Engineering, Arts, and Mathematics topics in a way that is properly contextualized within their social applications, implications, and contexts. "
-				}
-			}
-		},
-		{
 			label: COMPANY.YOUREKA,
 			start: parseYearFromDateStr(work[COMPANY.YOUREKA].startDate),
 			end: parseYearFromDateStr(work[COMPANY.YOUREKA].endDate),
 			description: work[COMPANY.YOUREKA].summary,
 			topics: {
 				[TOPICS.CODING]: {
-					amount: 100,
+					amount: 80,
 					desc: work[COMPANY.YOUREKA].roles[ROLES.TECH].des
+				},
+				[TOPICS.SOCIAL]: {
+					amount: 20,
+					desc: work[COMPANY.YOUREKA].roles[ROLES.ARCHITECT].des
 				}
 			}
 		}
