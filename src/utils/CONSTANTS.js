@@ -6,8 +6,8 @@ const SECTIONS = {
 };
 
 const TOPICS = {
-	MUSIC: "MUSIC",
 	CODING: "CODING",
+	MUSIC: "MUSIC",
 	SOCIAL: "SOCIAL",
 	ALL: ""
 };

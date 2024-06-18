@@ -84,7 +84,7 @@ const resume = {
         "position": "Software Architect / Product Owner / Co-Founder",
         "website": "http://societylab.org",
         "startDate": "2013-08-01",
-        "endDate": "2018-06-12",
+        "endDate": "2016-01-12",
         "summary": "Worked with a partner to develop a new social media platform that leveraged data visualization for collecting, exploring, and sharing information and ideas in a way that respects privacy and breaks users’ filter bubbles. We made it to the beta testing stage and realized the product was beautiful but too abstract and lacked a clear problem to solve and business model to effectively grow. The experience, however, taught us a great deal and developed many ideas that will be implemented elsewhere in the future.",
         "highlights": [{
             "title":  ROLES.TECH,

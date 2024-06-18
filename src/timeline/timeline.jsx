@@ -15,7 +15,7 @@ class Timeline extends Component {
 			item: new Item(),
 			lineItems: timeline.items,
 			contClasses: '',
-			selected: TOPICS.ALL
+			selected: 'TOPICS.CODING'
 		};
 	}
 
@@ -46,6 +46,10 @@ class Timeline extends Component {
 		setTimeout(()=>{
 			this.setState(endProps);
 		},duration);
+	}
+
+	componentDidMount() {
+		this.fitler(TOPICS.CODING);
 	}
 
 	render() {
